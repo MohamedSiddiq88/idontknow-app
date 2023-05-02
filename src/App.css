@@ -2,37 +2,93 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* heading */
+#heading{
+  margin-top: 0.5rem;
+  font-size: 5rem;
+  /* border: 1px solid white; */
+  background-color: #444;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* body */
+body{
+  background-color: #333;
+  color:white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* col */
+.col{
+  margin-top: 20px;
+}
+
+/* card */
+.card{
+  background-color: #444;
+  padding: 0.5rem;
+  
+}
+
+/* card's button */
+.button-section{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 0.5rem;
+}
+
+.btn{
+  width: 100%;
+}
+
+/* ADD DATA */
+.AddData.card{
+  border: 1px solid white;
+}
+
+input{
+  border-style: none;
+  background-color: transparent;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input:placeholder-shown{
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+
+/* TABLE */
+tr:nth-child(odd){
+  background-color: #322;
 }
+
+/* tr:nth-child(even){
+  border-width:1px 0;
+  border-style:solid;
+  border-color:tomato ;
+} */
+
+table{
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+th{
+  text-align: left;
+  padding:0 0.5rem;
+}
+tr{
+  text-align: left;
+}
+
+
+
+/* form */
+form{
+  margin: 0px;
+  padding: 0px;
+}
+
+
