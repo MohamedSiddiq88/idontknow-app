@@ -149,10 +149,12 @@ function AddData({data,setData}){
 
    }else{
     if(isNaN(value)){
-      value="please enter Number only";
-      event.target.style="color:red; font-weight:bold;";
+      event.target.style="color:yellow; font-weight:bold;";
+      event.target.placeholder="Please Enter Age";
+      value="";
     }else{
       event.target.style="color:white; font-weight:normal;";
+      event.target.placeholder="Enter Age";
       value=val;
     }
     event.target.value=value;
@@ -360,7 +362,7 @@ const [bloodgroup,setBloodGroup]=useState("")
 
   return(
 
-    <div className='col col-md-3'>
+    <div>
       <div className='card'>
       
       {/* prevent from reloading the page on submiting */}
