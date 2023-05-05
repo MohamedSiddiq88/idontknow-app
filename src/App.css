@@ -19,7 +19,7 @@ body{
 
 
 /* col */
-.col{
+.coll{
   margin-top: 20px;
 }
 
@@ -41,14 +41,16 @@ body{
 }
 
 /* ADD DATA */
-.AddData.card{
+.card{
   border: 1px solid white;
+  overflow: hidden;
 }
 
 input{
   border-style: none;
   background-color: transparent;
   color: white;
+  width: 100%;
 }
 
 input:placeholder-shown{

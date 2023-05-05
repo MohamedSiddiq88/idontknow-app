@@ -90,13 +90,16 @@ function updating(){
       <div className='container-fluid'>
         <div className='row'>
          
-        
+        <div className='col-md-4 coll'>
         <AddData
         data={data}
         setData={setData}
         />
+        </div>
+        
     {
       data.map((obj,index)=>(
+        <div className='col-md-4 coll'>
         <Display
         key={index}
         ind={index}
@@ -107,6 +110,7 @@ function updating(){
         setUpdate={setUpdate}
         updating={updating}
         />
+        </div>
       ))
       
     }
@@ -157,7 +161,7 @@ function AddData({data,setData}){
 
   return(
 
-    <div className='col col-md-3'>
+    
       <div className='card'>
       
       {/* prevent from reloading the page on submiting */}
@@ -190,7 +194,7 @@ function AddData({data,setData}){
         </form>
 
         </div>
-    </div>
+    
 
   );
 
@@ -226,7 +230,7 @@ function onUpdate(ind){
 
     :
   
-    <div className='col col-md-3'>
+    
       <div className='card'>
 
         <table>
@@ -277,7 +281,7 @@ function onUpdate(ind){
         </div>
 
         </div>
-    </div>
+    
   
   }
    </>    
